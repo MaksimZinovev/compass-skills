@@ -1,30 +1,102 @@
+<h1 align="center">Compass Skills</h1>
 
-# Domain Knowledge — Skills Toolkit
+<p align="center">
+  <strong>Domain Knowledge Skills Toolkit for QA, BDD, automation, and product decisions.</strong><br>
+  <a href="#tldr">TLDR</a> - <a href="#quick-start">Quick Start</a> - <a href="#structure">Structure</a> - <a href="#how-to-use">How to Use</a> - <a href="#how-it-works">How It Works</a>
+</p>
+
+```shell
+ ██████╗ ██████╗ ███╗   ███╗██████╗  █████╗ ███████╗███████╗
+██╔════╝██╔═══██╗████╗ ████║██╔══██╗██╔══██╗██╔════╝██╔════╝
+██║     ██║   ██║██╔████╔██║██████╔╝███████║███████╗███████╗
+██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██╔══██║╚════██║╚════██║
+╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ██║  ██║███████║███████║
+ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
+
+███████╗██╗  ██╗██╗██╗     ██╗     ███████╗
+██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝
+███████╗█████╔╝ ██║██║     ██║     ███████╗
+╚════██║██╔═██╗ ██║██║     ██║     ╚════██║
+███████║██║  ██╗██║███████╗███████╗███████║
+╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
+```
+
+## TLDR
 
 A set of AI skills that guide teams through building, structuring, questioning, and applying domain knowledge.
 
-It is primarily designed for testers, test analysts, QA engineers, test automation engineers, product managers, product designers, and UX researchers working with complex products, multiple teams, systems, integrations, requirements, existing BDD scenarios, knowledge base notes, and tester interviews.
+Compass is designed for testers, test analysts, QA engineers, test automation engineers, product managers, product designers, and UX researchers working with complex products, systems, integrations, requirements, BDD scenarios, knowledge base notes, and tester interviews.
+
+## Quick Start
+
+```powershell
+/compass-intro              # load framework context
+/compass-orient             # find the best focus area
+/compass-conceptual-model   # model one product/system area
+```
+
+Load `/compass-intro` at the start of any session. It provides the framework context all other skills depend on. Then run `/compass-orient` to find where to focus, or jump directly to the skill that matches your current work.
+
+## Structure
+
+```bash
+compass-skills/
+├── README.md                              # generated toolkit overview
+└── skills/
+  ├── compass-automation-scenario-builder/ # automation-ready BDD
+  ├── compass-bdd-scenario-builder/        # readable, traceable Gherkin
+  ├── compass-conceptual-model/            # product/system model skill
+  ├── compass-domain/                      # business/domain mapping
+  ├── compass-domain-qa/                   # product and domain Q&A
+  ├── compass-intro/                       # framework orientation
+  ├── compass-orient/                      # diagnostic audit
+  └── compass-scenario-gap-finder/         # missing scenario discovery
+```
+
+| Skill                                                                                | What it does or produces                                                                                                                           |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [skills/compass-intro/SKILL.md](skills/compass-intro/SKILL.md)                       | Framework orientation — load this first.                                                                                                           |
+| [skills/compass-orient/SKILL.md](skills/compass-orient/SKILL.md)                     | Diagnostic audit across domain knowledge, conceptual model, BDD design, automation readiness, product questions, and scenario gaps.                |
+| [skills/compass-conceptual-model/SKILL.md](skills/compass-conceptual-model/SKILL.md) | Business objects, attributes, relationships, states, transitions, actions, ubiquitous language, testable behaviours, assumptions, and model risks. |
+
+<details>
+<summary>Read more. Skill catalogue, including planned skills</summary>
+
+| Skill                                                                                                      | What it does or produces                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [skills/compass-domain/SKILL.md](skills/compass-domain/SKILL.md)                                           | Focused domain slice covering scope, actors, concepts, terminology conflicts, bounded contexts, rules, processes, integrations, risks, open questions, and optional JSON/YAML.                 |
+| [skills/compass-bdd-scenario-builder/SKILL.md](skills/compass-bdd-scenario-builder/SKILL.md)               | Input triage, extracted facts/rules/flows, scenario intent, Gherkin scenarios, assumptions, gaps, traceability, and interview follow-ups.                                                      |
+| [skills/compass-scenario-gap-finder/SKILL.md](skills/compass-scenario-gap-finder/SKILL.md)                 | Interview-led discovery of missing scenarios, edge cases, tacit tester knowledge, business rules, data variations, risks, assumptions, and candidate BDD scenarios.                            |
+| [skills/compass-automation-scenario-builder/SKILL.md](skills/compass-automation-scenario-builder/SKILL.md) | Automation-ready Gherkin using existing feature files, step definitions, sample scenarios, reusable step map, missing steps, near-duplicates, alternatives, trade-offs, and confidence rating. |
+| [skills/compass-domain-qa/SKILL.md](skills/compass-domain-qa/SKILL.md)                                     | Direct domain answers with rules, examples, affected systems, testing impact, automation impact, assumptions, risks, and open questions.                                                       |
+
+</details>
+
+## How to Use
+
+```powershell
+/compass-intro                       # understand the toolkit stance
+/compass-orient                      # audit known, assumed, missing, risky areas
+/compass-domain                      # map business/domain knowledge when needed
+/compass-conceptual-model            # define objects, relationships, states, actions
+/compass-bdd-scenario-builder        # draft readable, traceable Gherkin
+/compass-automation-scenario-builder # fit scenarios to existing automation steps
+```
 
 Each skill facilitates one kind of domain knowledge work: orienting, mapping the domain, defining the product/system model, generating BDD scenarios, adapting scenarios to automation, answering product questions, or uncovering overlooked scenarios through structured interviews.
 
-### How it works
-
-Load /compass-intro at the start of any session. It provides the framework context all other skills depend on. Then either run /compass-orient to find out where to focus, or jump directly to the skill that matches your current work.
-
-### Start here
-
-| Skill | What it does |
-|---|---|
-| skills/compass-intro/SKILL.md | Framework orientation — load this first |
-| skills/compass-orient/SKILL.md | Diagnostic audit across domain knowledge, conceptual model, BDD design, automation readiness, product questions, and scenario gaps |
-
-### Usage
+## Usage examples
 
 ```shell
 User: /compass-intro
 User: We work on energy market and smart metering solutions. Help me understand how to use this toolkit.
 AI: I’ll explain the workflow: domain, conceptual model, BDD, automation, Q&A, and human-in-the-loop decisions.
-````
+```
+
+<details>
+<summary>Read more </summary>
+
+
 
 ```shell
 User: /compass-orient
@@ -38,50 +110,24 @@ User: Fit this reconnect failure scenario to our Playwright-BDD feature files an
 AI: I’ll map reusable steps, flag missing or near-duplicate steps, propose 1–2 wording options, and recommend the best fit.
 ```
 
-### Domain understanding
+</details>
 
-Work here maps the real-world/business domain before generating scenarios or automation, while keeping awareness of the wider product, teams, systems, and integrations.
+## How It Works
 
-| Skill                      | What it produces                                                                                                                                                                                  |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| skills/compass-domain/SKILL.md | Focused domain slice covering scope, actors, real-world concepts, terminology conflicts, bounded contexts, business rules, processes, integrations, risks, open questions, and optional JSON/YAML |
+Domain knowledge work starts with messy inputs: requirements, product specs, user stories, support notes, market procedure notes, existing BDD, feature files, step definitions, tester knowledge, and questions from other teams.
+The toolkit separates the real-world domain from the product/system model, turns that model into readable BDD scenarios, adapts selected scenarios to existing automation patterns, and keeps humans in the loop.
+AI proposes. Humans critique. AI revises. Humans decide and steer. Interactive sessions with frequent feedback loops. Each skill has a specific focus and expected output, but the process is flexible and iterative.
 
-### Product/system model
+```shell
+/compass-intro
+  -> provides the framework context that all other /compass-* skills depend on, shared principles, and human-in-the-loop working mode
 
-Work here turns domain knowledge into the product or system model that scenarios, tests, and automation should align to.
+/compass-orient
+  -> audits the current situation and recommends where to start
+```
 
-| Skill                                | What it produces                                                                                                                                  |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| skills/compass-conceptual-model/SKILL.md | Business objects, attributes, relationships, states, transitions, actions, ubiquitous language, testable behaviours, assumptions, and model risks |
-
-### Test design
-
-Work here converts mixed input bundles into readable, traceable BDD scenarios.
-
-| Skill                                    | What it produces                                                                                                                                                   |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| skills/compass-bdd-scenario-builder/SKILL.md | Input triage, extracted facts/rules/flows, scenario intent, Gherkin scenarios, assumptions, gaps, traceability, and interview follow-ups                           |
-| skills/compass-scenario-gap-finder/SKILL.md  | Interview-led discovery of missing scenarios, edge cases, tacit tester knowledge, business rules, data variations, risks, assumptions, and candidate BDD scenarios |
-
-### Automation readiness
-
-Work here adapts BDD scenarios to the team’s existing Gherkin, Playwright-BDD, and TypeScript automation conventions.
-
-| Skill                                           | What it produces                                                                                                                                                                                             |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| skills/compass-automation-scenario-builder/SKILL.md | Automation-ready Gherkin using existing feature files, step definitions, and sample scenarios; reusable step map, missing steps, near-duplicates, 1–2 design alternatives, trade-offs, and confidence rating |
-
-### Product/domain support
-
-Work here helps mixed teams answer product, business logic, integration, and behaviour questions without losing testing impact.
-
-| Skill                         | What it produces                                                                                                                        |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| skills/compass-domain-qa/SKILL.md | Direct domain answers with rules, examples, affected systems, testing impact, automation impact, assumptions, risks, and open questions |
-
-## End-to-end flow
-
-
+<details>
+<summary>Read more</summary>
 
 ```shell
 /compass-intro
@@ -109,16 +155,8 @@ Work here helps mixed teams answer product, business logic, integration, and beh
   -> maps scenarios to existing Gherkin + Playwright-BDD steps, flags missing steps, and proposes alternatives
 ```
 
-## The workflow in brief
-
-Domain knowledge work starts with messy inputs: requirements, product specs, user stories, support notes, market procedure notes, existing BDD, feature files, step definitions, tester knowledge, and questions from other teams.
-
-The toolkit separates the real-world domain from the product/system model, turns that model into readable BDD scenarios, adapts selected scenarios to existing automation patterns, and keeps humans in the loop.
-
-AI proposes. Humans critique. AI revises. Humans decide.
-
-### License
-
-MIT — see LICENSE. Fork it, adapt it, ship it. Attribution is appreciated but not required.
+</details>
 
 
+
+License: MIT — see LICENSE. Fork it, adapt it, ship it. Attribution is appreciated but not required.
