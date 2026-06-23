@@ -157,6 +157,14 @@ AI proposes. Humans critique. AI revises. Humans decide and steer. Interactive s
 
 </details>
 
+## Star and check other projects
 
+Found something helpful or useful? Give it a star. Share with others. 
+
+What else do I have? Check the links 
+
+- [🌵Tiny CLI that validates markdown spec docs against rules embedded directly in the document](https://github.com/MaksimZinovev/docfence)
+- [🦎Automatify Jira TestOps bdd plugin for small teams who got tired of bloated test management tools and complex integrations ](https://marketplace.atlassian.com/apps/3116680415/automatify-testops-for-jira?hosting=cloud&tab=overview)
+- [🦘 Markdown File Viewer with mermaidjs diagrams support and themes. Export as standalon HTML or PDF.](https://github.com/MaksimZinovev/md-viewer)
 
 License: MIT — see LICENSE. Fork it, adapt it, ship it. Attribution is appreciated but not required.
