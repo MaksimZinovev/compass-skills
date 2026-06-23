@@ -43,32 +43,32 @@ Load `/compass-intro` at the start of any session. It provides the framework con
 compass-skills/
 ├── README.md                              # generated toolkit overview
 └── skills/
-  ├── compass-automation-scenario-builder/ # automation-ready BDD
-  ├── compass-bdd-scenario-builder/        # readable, traceable Gherkin
-  ├── compass-conceptual-model/            # product/system model skill
-  ├── compass-domain/                      # business/domain mapping
-  ├── compass-domain-qa/                   # product and domain Q&A
   ├── compass-intro/                       # framework orientation
-  ├── compass-orient/                      # diagnostic audit
-  └── compass-scenario-gap-finder/         # missing scenario discovery
+  ├── compass-orient/                      # diagnostic audit; decide where to start
+  ├── compass-conceptual-model/            # product/system model skill; define how system behaves
+  ├── compass-automation-scenario-builder/ # automation-ready BDD; make behaviour executable
+  ├── compass-bdd-scenario-builder/        # readable, traceable Gherkin; describe behaviour as examples
+  ├── compass-domain/                      # business/domain mapping; understand the world
+  ├── compass-domain-qa/                   # product and domain Q&A
+  └── compass-scenario-gap-finder/         # missing scenario discovery; find missing behaviour
 ```
 
 | Skill                                                                                | What it does or produces                                                                                                                           |
 | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [skills/compass-intro/SKILL.md](skills/compass-intro/SKILL.md)                       | Framework orientation — load this first.                                                                                                           |
-| [skills/compass-orient/SKILL.md](skills/compass-orient/SKILL.md)                     | Diagnostic audit across domain knowledge, conceptual model, BDD design, automation readiness, product questions, and scenario gaps.                |
-| [skills/compass-conceptual-model/SKILL.md](skills/compass-conceptual-model/SKILL.md) | Business objects, attributes, relationships, states, transitions, actions, ubiquitous language, testable behaviours, assumptions, and model risks. |
+| [skills/compass-orient/SKILL.md](skills/compass-orient/SKILL.md)                     | Diagnostic audit across domain knowledge, conceptual model, BDD design, automation readiness, product questions, and scenario gaps.  Use when unsure where the problem is — it finds the weakest layer so you don’t misuse other skills prematurely               |
+| [skills/compass-conceptual-model/SKILL.md](skills/compass-conceptual-model/SKILL.md) | Business objects, attributes, relationships, states, transitions, actions, ubiquitous language, testable behaviours, assumptions, and model risks. Use when system behaviour is unclear or inconsistent (transforms domain into testable structure). |
 
 <details>
 <summary>Read more. Skill catalogue, including planned skills</summary>
 
 | Skill                                                                                                      | What it does or produces                                                                                                                                                                       |
 | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [skills/compass-domain/SKILL.md](skills/compass-domain/SKILL.md)                                           | Focused domain slice covering scope, actors, concepts, terminology conflicts, bounded contexts, rules, processes, integrations, risks, open questions, and optional JSON/YAML.                 |
-| [skills/compass-bdd-scenario-builder/SKILL.md](skills/compass-bdd-scenario-builder/SKILL.md)               | Input triage, extracted facts/rules/flows, scenario intent, Gherkin scenarios, assumptions, gaps, traceability, and interview follow-ups.                                                      |
-| [skills/compass-scenario-gap-finder/SKILL.md](skills/compass-scenario-gap-finder/SKILL.md)                 | Interview-led discovery of missing scenarios, edge cases, tacit tester knowledge, business rules, data variations, risks, assumptions, and candidate BDD scenarios.                            |
-| [skills/compass-automation-scenario-builder/SKILL.md](skills/compass-automation-scenario-builder/SKILL.md) | Automation-ready Gherkin using existing feature files, step definitions, sample scenarios, reusable step map, missing steps, near-duplicates, alternatives, trade-offs, and confidence rating. |
-| [skills/compass-domain-qa/SKILL.md](skills/compass-domain-qa/SKILL.md)                                     | Direct domain answers with rules, examples, affected systems, testing impact, automation impact, assumptions, risks, and open questions.                                                       |
+| [skills/compass-domain/SKILL.md](skills/compass-domain/SKILL.md)                                           | Focused domain slice covering scope, actors, concepts, terminology conflicts, bounded contexts, rules, processes, integrations, risks, open questions, and optional JSON/YAML.  Use when real-world concepts, rules, or terminology are unclear               |
+| [skills/compass-bdd-scenario-builder/SKILL.md](skills/compass-bdd-scenario-builder/SKILL.md)               | Input triage, extracted facts/rules/flows, scenario intent, Gherkin scenarios, assumptions, gaps, traceability, and interview follow-ups. Use when you understand behaviour and need readable scenarios (depends on conceptual model)                                                     |
+| [skills/compass-scenario-gap-finder/SKILL.md](skills/compass-scenario-gap-finder/SKILL.md)                 | Interview-led discovery of missing scenarios, edge cases, tacit tester knowledge, business rules, data variations, risks, assumptions, and candidate BDD scenarios. Use when scenarios already exist but feel incomplete — it expands coverage by surfacing edge cases and tester knowledge                           |
+| [skills/compass-automation-scenario-builder/SKILL.md](skills/compass-automation-scenario-builder/SKILL.md) | Automation-ready Gherkin using existing feature files, step definitions, sample scenarios, reusable step map, missing steps, near-duplicates, alternatives, trade-offs, and confidence rating. Use when BDD exists but must align with code and reuse or identify missing BDD steps |
+| [skills/compass-domain-qa/SKILL.md](skills/compass-domain-qa/SKILL.md)                                     | Direct domain answers with rules, examples, affected systems, testing impact, automation impact, assumptions, risks, and open questions. Use when you need precise answers about rules/integrations                                                      |
 
 </details>
 
