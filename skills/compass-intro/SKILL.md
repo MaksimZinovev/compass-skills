@@ -1,4 +1,7 @@
-### name: compass-intro
+---
+name: compass-intro
+description: Framework orientation for Compass-skills  — load this first; provides the context all other skills depend on
+---
 
 description: Framework orientation for Domain Knowledge Skills Toolkit (Compass) — load this first; provides the context all other skills depend on
 
